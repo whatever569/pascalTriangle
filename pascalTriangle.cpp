@@ -37,6 +37,8 @@ int combination(int n, int r)
     return result;
 }
 
+//this function may cause rows to be negative if the inputed int was too high (in this case the program breaks down at 22)
+//to prevent that, change the data types of this function's input and outputs based on your needs (in this case, long long) 
 long factorial(long x)
 {
     if(x <= 1) return 1;
